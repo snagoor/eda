@@ -14,3 +14,7 @@
       action:
         debug:
           msg: "{{ event.payload }}"
+
+      action:
+        debug:
+          msg: "{{ payload.meta.hosts }}"
