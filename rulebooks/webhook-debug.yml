@@ -12,11 +12,9 @@
       condition: true
  ## Define the action we should take should the condition be met
       action:
-        - name: Print payload debug
-          debug:
-            msg: "{{ event.payload }}"
+        debug:
+          msg: "{{ event.payload }}"
 
       action:
-        - name: Print meta debug
-          debug:
-            msg: "{{ event.payload.meta }}"
+        debug:
+          msg: "{{ event.payload.meta }}"
