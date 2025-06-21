@@ -13,4 +13,4 @@
  ## Define the action we should take should the condition be met
       action:
         debug:
-          msg: "{{ event }}"
+          msg: "{{ event.payload }}"
