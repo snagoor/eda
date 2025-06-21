@@ -11,12 +11,12 @@
     - name: Say Hello
       condition: true
  ## Define the action we should take should the condition be met
-    - name: Print payload debug
       action:
-        debug:
-          msg: "{{ event.payload }}"
+        - name: Print payload debug
+          debug:
+            msg: "{{ event.payload }}"
 
-    - name: Print meta debug
       action:
-        debug:
-          msg: "{{ event.payload.meta }}"
+        - name: Print meta debug
+          debug:
+            msg: "{{ event.payload.meta }}"
